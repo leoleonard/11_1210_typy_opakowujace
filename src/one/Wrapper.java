@@ -12,13 +12,18 @@ public class Wrapper {
         System.out.println("Podaj drugą liczbę");
         String line2 = scanner.nextLine();
 
-        Integer integer = new Integer(line);
-        Integer integer2 = Integer.valueOf(line2);
+        try {
+            Integer integer = new Integer(line);
+            Integer integer2 = Integer.valueOf(line2);
 
-        int firstNumber = integer;
-        int secondNumber = integer2;
+            int firstNumber = integer;
+            int secondNumber = integer2;
 
-        System.out.println(firstNumber + secondNumber);
+            System.out.println(firstNumber + secondNumber);
+        } catch(NumberFormatException e) {
+            System.out.println("Nieprawidłowa wartość;");
+        }
+
 
 //        int liczba = scanner.nextInt();
 //        System.out.println("Podaj drugą liczbę");

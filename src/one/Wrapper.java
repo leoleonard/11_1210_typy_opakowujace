@@ -8,16 +8,28 @@ public class Wrapper {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Podaj pierwszą liczbę");
-        int liczba = scanner.nextInt();
+        String line = scanner.nextLine();
         System.out.println("Podaj drugą liczbę");
-        int liczba2 = scanner.nextInt();
+        String line2 = scanner.nextLine();
 
-        Integer value1 = Integer.valueOf(liczba);
-        Integer value2 = liczba2;
+        Integer integer = new Integer(line);
+        Integer integer2 = Integer.valueOf(line2);
 
-        System.out.println(value1);
-        System.out.println(value2);
-        System.out.println(value1 + value2);
+        int firstNumber = integer;
+        int secondNumber = integer2;
+
+        System.out.println(firstNumber + secondNumber);
+
+//        int liczba = scanner.nextInt();
+//        System.out.println("Podaj drugą liczbę");
+//        int liczba2 = scanner.nextInt();
+//
+//        Integer value1 = Integer.valueOf(liczba);
+//        Integer value2 = liczba2;
+//
+//        System.out.println(value1);
+//        System.out.println(value2);
+//        System.out.println(value1 + value2);
     }
 
 }
